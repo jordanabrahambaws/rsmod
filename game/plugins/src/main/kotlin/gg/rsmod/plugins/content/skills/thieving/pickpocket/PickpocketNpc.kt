@@ -28,7 +28,7 @@ enum class PickpocketNpc(val npcIds: IntArray, val experience: Double, val reqLe
                     Npcs.MAN_3014, Npcs.MAN_3078, Npcs.MAN_3079, Npcs.MAN_3080, Npcs.MAN_3081,
                     Npcs.MAN_3082, Npcs.MAN_3101, Npcs.MAN_3109, Npcs.MAN_3260, Npcs.MAN_3264,
                     Npcs.MAN_3265, Npcs.MAN_3266, Npcs.MAN_3652, Npcs.MAN_6987, Npcs.MAN_6988,
-                    Npcs.MAN_6989, Npcs.MAN_7547,
+                    Npcs.MAN_6989/*, Npcs.MAN_7547*/,
 
                     //Woman NPC Ids
                     Npcs.WOMAN_3015, Npcs.WOMAN_3083, Npcs.WOMAN_3084, Npcs.WOMAN_3085, Npcs.WOMAN_3110,

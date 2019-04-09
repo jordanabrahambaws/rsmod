@@ -52,7 +52,7 @@ on_login {
     if (player.getVarp(1055) == 0 && displayName) {
         player.syncVarp(1055)
     }
-    player.setVarbit(8119, 1) // Has display name
+    //player.setVarbit(8119, 1) // Has display name
 
     // Sync attack priority options.
     player.syncVarp(OSRSGameframe.NPC_ATTACK_PRIORITY_VARP)

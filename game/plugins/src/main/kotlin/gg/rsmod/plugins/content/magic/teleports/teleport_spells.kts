@@ -9,6 +9,7 @@ private val SOUNDAREA_VOLUME = 1
 
 TeleportSpell.values.forEach { teleport ->
     if (teleport.paramItem == null) {
+        System.out.println(teleport.spellName);
         on_magic_spell_button(teleport.spellName) { metadata ->
             player.teleport(teleport, metadata)
         }
@@ -52,7 +53,7 @@ enum class TeleportSpell(val spellName: String, val type: TeleportType, val endA
     WATCHTOWER("Watchtower Teleport", TeleportType.MODERN, Area(2551, 3113, 2553, 3116), 68.0),
     TROLLHEIM("Trollheim Teleport", TeleportType.MODERN, Area(2888, 3675, 2890, 3678), 68.0),
     APE_ATOLL("Ape Atoll Teleport", TeleportType.MODERN, Area(2760, 2781, 2763, 2784), 74.0),
-    KOUREND_CASTLE("Kourend Castle Teleport", TeleportType.MODERN, Area(1633, 3665, 1639, 3670), 82.0),
+    //KOUREND_CASTLE("Kourend Castle Teleport", TeleportType.MODERN, Area(1633, 3665, 1639, 3670), 82.0),
 
     /**
      * Ancients.
@@ -80,17 +81,17 @@ enum class TeleportSpell(val spellName: String, val type: TeleportType, val endA
     /**
      * Arceuus.
      */
-    LUMBRIDGE_GRAVEYARD("Lumbridge Graveyard Teleport", TeleportType.ARCEUUS, Area(3238, 3199, 3240, 3203), 10.0),
-    DRAYNOR_MANOR("Draynor Manor Teleport", TeleportType.ARCEUUS, Area(3107, 3327, 3113, 3330), 16.0),
-    BATTLEFRONT("Battlefront Teleport", TeleportType.ARCEUUS, Area(1342, 3682, 1346, 3685), 19.0),
-    MIND_ALTAR("Mind Altar Teleport", TeleportType.ARCEUUS, Area(2979, 3509, 2980, 3512), 22.0),
-    SALVE_GRAVEYARD("Salve Graveyard Teleport", TeleportType.ARCEUUS, Area(3437, 3467, 3442, 3471), 30.0),
-    FENKENSTRAIN_CASTLE("Fenkenstrain's Castle Teleport", TeleportType.ARCEUUS, Area(3546, 3527, 3549, 3529), 50.0),
-    WEST_ARDOUGNE("West Ardougne Teleport", TeleportType.ARCEUUS, Area(2528, 3304, 2534, 3308), 68.0),
-    HARMONY_ISLAND("Harmony Island Teleport", TeleportType.ARCEUUS, Area(3793, 2857, 3801, 2863), 74.0),
-    CEMETERY("Cemetery Teleport", TeleportType.ARCEUUS, Area(2964, 3760, 2969, 3766), 82.0),
-    BARROWS("Barrows Teleport", TeleportType.ARCEUUS, Area(3563, 3312, 3566, 3315), 90.0),
-    APE_ATOLL_DUNGEON("Ape Atoll Teleport", TeleportType.ARCEUUS, Area(2764, 9102, 2767, 9104), 100.0, paramItem = 20427)
+    //LUMBRIDGE_GRAVEYARD("Lumbridge Graveyard Teleport", TeleportType.ARCEUUS, Area(3238, 3199, 3240, 3203), 10.0),
+    //DRAYNOR_MANOR("Draynor Manor Teleport", TeleportType.ARCEUUS, Area(3107, 3327, 3113, 3330), 16.0),
+    //BATTLEFRONT("Battlefront Teleport", TeleportType.ARCEUUS, Area(1342, 3682, 1346, 3685), 19.0),
+    //MIND_ALTAR("Mind Altar Teleport", TeleportType.ARCEUUS, Area(2979, 3509, 2980, 3512), 22.0),
+    //SALVE_GRAVEYARD("Salve Graveyard Teleport", TeleportType.ARCEUUS, Area(3437, 3467, 3442, 3471), 30.0),
+    //FENKENSTRAIN_CASTLE("Fenkenstrain's Castle Teleport", TeleportType.ARCEUUS, Area(3546, 3527, 3549, 3529), 50.0),
+    //WEST_ARDOUGNE("West Ardougne Teleport", TeleportType.ARCEUUS, Area(2528, 3304, 2534, 3308), 68.0),
+    //HARMONY_ISLAND("Harmony Island Teleport", TeleportType.ARCEUUS, Area(3793, 2857, 3801, 2863), 74.0),
+    //CEMETERY("Cemetery Teleport", TeleportType.ARCEUUS, Area(2964, 3760, 2969, 3766), 82.0),
+    //BARROWS("Barrows Teleport", TeleportType.ARCEUUS, Area(3563, 3312, 3566, 3315), 90.0),
+    //APE_ATOLL_DUNGEON("Ape Atoll Teleport", TeleportType.ARCEUUS, Area(2764, 9102, 2767, 9104), 100.0, paramItem = 20427)
     ;
 
     companion object {
