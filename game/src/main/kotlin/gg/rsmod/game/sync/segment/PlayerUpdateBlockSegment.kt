@@ -8,6 +8,7 @@ import gg.rsmod.game.sync.SynchronizationSegment
 import gg.rsmod.game.sync.block.UpdateBlockType
 import gg.rsmod.net.packet.DataType
 import gg.rsmod.net.packet.GamePacketBuilder
+import gg.rsmod.util.Misc
 
 /**
  * @author Tom <rspsmods@gmail.com>
@@ -192,7 +193,7 @@ class PlayerUpdateBlockSegment(val other: Player, private val newPlayer: Boolean
                     }
                 }
 
-                appBuf.putString(other.username)
+                appBuf.putString(Misc.formatRuneScapeString(other.username))
                 appBuf.put(DataType.BYTE, other.combatLevel)
                 appBuf.put(DataType.SHORT, 0)
                 appBuf.put(DataType.BYTE, 0)

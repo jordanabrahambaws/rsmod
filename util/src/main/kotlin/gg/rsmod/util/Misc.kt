@@ -68,4 +68,22 @@ object Misc {
             return 14
         return if (dx == 2 && dy == 2) 15 else -1
     }
+
+    fun formatRuneScapeString(str: String): String {
+        var s = str.replace("_", " ").toLowerCase()
+        val formatted = StringBuilder()
+        var wasSpace = true
+        for (i in 0 until s.length) {
+            if (wasSpace) {
+                formatted.append(("" + s[i]).toUpperCase())
+                wasSpace = false
+            } else {
+                formatted.append(s[i])
+            }
+            if (s[i] == ' ') {
+                wasSpace = true
+            }
+        }
+        return formatted.toString()
+    }
 }
