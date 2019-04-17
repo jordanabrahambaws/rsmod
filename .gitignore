@@ -2,3 +2,8 @@
 *.class
 *.zip
 *.tar
+.idea/
+.gradle/
+game/build/
+net/build/
+util/build/
