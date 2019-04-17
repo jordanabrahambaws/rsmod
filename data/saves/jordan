@@ -1,0 +1,159 @@
+{
+  "passwordHash": "$2a$16$bf/92TWxWPi/f8k3sT0wnexDQf61DkSgZqHGDJnWzveGKq73UzyA.",
+  "username": "jordan",
+  "displayName": "jordan",
+  "previousXteas": [
+    1396826632,
+    -823635821,
+    562743474,
+    -1214422469
+  ],
+  "x": 3165,
+  "z": 3486,
+  "height": 0,
+  "privilege": 0,
+  "displayMode": 0,
+  "runEnergy": 87.37499999999854,
+  "skills": [
+    {
+      "skill": 0,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 1,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 2,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 3,
+      "xp": 1154.0,
+      "lvl": 10
+    },
+    {
+      "skill": 4,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 5,
+      "xp": 0.0,
+      "lvl": 0
+    },
+    {
+      "skill": 6,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 7,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 8,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 9,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 10,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 11,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 12,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 13,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 14,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 15,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 16,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 17,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 18,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 19,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 20,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 21,
+      "xp": 0.0,
+      "lvl": 1
+    },
+    {
+      "skill": 22,
+      "xp": 0.0,
+      "lvl": 1
+    }
+  ],
+  "attributes": {},
+  "timers": [],
+  "itemContainers": [],
+  "varps": [
+    {
+      "id": 84,
+      "state": 1
+    },
+    {
+      "id": 168,
+      "state": 1
+    },
+    {
+      "id": 173,
+      "state": 1
+    },
+    {
+      "id": 965,
+      "state": 23
+    },
+    {
+      "id": 1055,
+      "state": 8192
+    }
+  ]
+}

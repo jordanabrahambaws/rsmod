@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gg.rsmod.game.model.AttributeTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-04-09T15:04:08" hostname="DESKTOP-72JF7VE" time="0.022">
+  <properties/>
+  <testcase name="uniqueTests" classname="gg.rsmod.game.model.AttributeTests" time="0.021"/>
+  <testcase name="persistenceTests" classname="gg.rsmod.game.model.AttributeTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

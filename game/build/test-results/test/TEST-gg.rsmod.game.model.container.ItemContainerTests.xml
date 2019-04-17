@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gg.rsmod.game.model.container.ItemContainerTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-04-09T15:04:09" hostname="DESKTOP-72JF7VE" time="0.003">
+  <properties/>
+  <testcase name="addOneTooManyLoose" classname="gg.rsmod.game.model.container.ItemContainerTests" time="0.001"/>
+  <testcase name="createContainer" classname="gg.rsmod.game.model.container.ItemContainerTests" time="0.0"/>
+  <testcase name="addOneTooManyStrict" classname="gg.rsmod.game.model.container.ItemContainerTests" time="0.0"/>
+  <testcase name="addNoted" classname="gg.rsmod.game.model.container.ItemContainerTests" time="0.0"/>
+  <testcase name="addOverflowAmount" classname="gg.rsmod.game.model.container.ItemContainerTests" time="0.0"/>
+  <testcase name="addNotedNoStack" classname="gg.rsmod.game.model.container.ItemContainerTests" time="0.0"/>
+  <testcase name="addToMiddle" classname="gg.rsmod.game.model.container.ItemContainerTests" time="0.0"/>
+  <testcase name="addUnnoted" classname="gg.rsmod.game.model.container.ItemContainerTests" time="0.0"/>
+  <testcase name="addToStackContainer" classname="gg.rsmod.game.model.container.ItemContainerTests" time="0.0"/>
+  <system-out><![CDATA[[11:04:09.646 INFO ] DefinitionSet        | Loaded 8186 animation definitions.
+[11:04:09.653 INFO ] DefinitionSet        | Loaded 1815 varp definitions.
+[11:04:09.677 INFO ] DefinitionSet        | Loaded 6714 varbit definitions.
+[11:04:09.703 INFO ] DefinitionSet        | Loaded 2101 enum definitions.
+[11:04:09.753 INFO ] DefinitionSet        | Loaded 8489 npc definitions.
+[11:04:09.838 INFO ] DefinitionSet        | Loaded 22711 item definitions.
+[11:04:09.942 INFO ] DefinitionSet        | Loaded 33474 object definitions.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

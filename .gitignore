@@ -1,22 +1,4 @@
-/.idea/
-/.gradle/
-build/
-g=out/
-gen/
 
-gradlew
-gradlew.bat
-
-/data/saves/
-/data/rsa/
-/data/xteas/
-
-/plugins/
-
-game.yml
-dev-settings.yml
-
-error.log
-
-first-launch
-first-launch-example
+*.class
+*.zip
+*.tar
