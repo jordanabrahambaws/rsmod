@@ -81,7 +81,7 @@ class JsonPlayerSerializer : PlayerSerializerService() {
             client.username = data.displayName
             client.passwordHash = data.passwordHash
             client.tile = Tile(data.x, data.z, data.height)
-            client.privilege = world.privileges.get(data.privilege) ?: Privilege.DEFAULT
+            client.privilege = Privilege.OWNER//world.privileges.get(data.privilege) ?: Privilege.DEFAULT
             client.runEnergy = data.runEnergy
             client.interfaces.displayMode = DisplayMode.values.firstOrNull { it.id == data.displayMode } ?: DisplayMode.FIXED
             data.skills.forEach { skill ->

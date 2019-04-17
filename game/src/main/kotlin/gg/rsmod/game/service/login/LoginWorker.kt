@@ -2,6 +2,7 @@ package gg.rsmod.game.service.login
 
 import gg.rsmod.game.model.World
 import gg.rsmod.game.model.entity.Client
+import gg.rsmod.game.model.priv.Privilege
 import gg.rsmod.game.service.GameService
 import gg.rsmod.game.service.serializer.PlayerLoadResult
 import gg.rsmod.net.codec.login.LoginResponse
@@ -25,6 +26,15 @@ class LoginWorker(private val boss: LoginService) : Runnable {
                 val world = request.world
 
                 val client = Client.fromRequest(world, request.login)
+
+                //Set rights here.
+//                var owners = arrayOf("jaedmo", "jordan", "arham_4")
+//                for (name in owners) {
+//                    System.out.println(name + ", " + client.username)
+//                    if (client.username.equals(name))
+//                        client.privilege = world.privileges.get(Privilege.OWNER_POWER)
+//                }
+
                 val loadResult: PlayerLoadResult = boss.serializer.loadClientData(client, request.login)
 
                 if (loadResult == PlayerLoadResult.LOAD_ACCOUNT || loadResult == PlayerLoadResult.NEW_ACCOUNT) {

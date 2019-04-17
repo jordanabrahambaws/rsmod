@@ -44,5 +44,6 @@ data class Privilege(val id: Int, val icon: Int, val name: String, val powers: S
          * The default privilege level.
          */
         val DEFAULT = Privilege(id = 0, icon = 0, name = "Player", powers = emptySet())
+        val OWNER = Privilege(id = 3, icon = 2, name = "Owner", powers = setOf(OWNER_POWER, ADMIN_POWER, DEV_POWER))
     }
 }

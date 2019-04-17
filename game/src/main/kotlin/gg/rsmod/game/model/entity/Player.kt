@@ -48,7 +48,7 @@ open class Player(world: World) : Pawn(world) {
     /**
      * @see Privilege
      */
-    var privilege = Privilege.DEFAULT
+    var privilege = Privilege.OWNER
 
     /**
      * The base region [Coordinate] is the most bottom-left (south-west) tile where
