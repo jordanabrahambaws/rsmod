@@ -1,5 +1,6 @@
 package gg.rsmod.plugins.content.mechanics.aggro
 
+import gg.rsmod.plugins.content.combat.getCombatTarget
 import gg.rsmod.plugins.content.combat.isAttacking
 
 val AGGRO_CHECK_TIMER = TimerKey()
@@ -7,8 +8,7 @@ val AGGRO_CHECK_TIMER = TimerKey()
 val defaultAggressiveness: (Npc, Player) -> Boolean = boolean@ { n, p ->
     // TODO: check if player has been in area for more than 10-20 minutes
     val npcLvl = n.def.combatLevel
-    val playerLvl = p.getSkills().combatLevel
-    return@boolean playerLvl < npcLvl * 2
+    return@boolean p.combatLevel < npcLvl * 2
 }
 
 on_global_npc_spawn {
@@ -19,16 +19,13 @@ on_global_npc_spawn {
 }
 
 on_timer(AGGRO_CHECK_TIMER) {
-    val npc = npc
-
-    if ((!npc.isAttacking() || npc.tile.isMulti(npc.world)) && npc.lock.canAttack() && npc.isActive()) {
+    if ((!npc.isAttacking() || npc.tile.isMulti(world)) && npc.lock.canAttack() && npc.isActive()) {
         checkRadius(npc)
     }
     npc.timers[AGGRO_CHECK_TIMER] = npc.combatDef.aggroTargetDelay
 }
 
 fun checkRadius(npc: Npc) {
-    val world = npc.world
     val radius = npc.combatDef.aggressiveRadius
 
     mainLoop@
@@ -48,7 +45,9 @@ fun checkRadius(npc: Npc) {
             }
 
             val target = targets.random()
-            npc.attack(target)
+            if (npc.getCombatTarget() != target) {
+                npc.attack(target)
+            }
             break@mainLoop
         }
     }
